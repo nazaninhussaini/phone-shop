@@ -1,0 +1,152 @@
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ * i{
+     cursor: pointer;
+}
+footer{
+    border: 1px solid;
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.9);
+    height: 250px;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr 1fr;
+    text-align: center;
+    overflow: hidden;
+}
+footer div.con img{
+    height: 140px;
+    width: 120px;
+    text-align: center;
+}
+footer .con{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+div.footer h1{
+    font-size: 15px;
+}
+div.footer i{
+    font-size: 30px;
+    text-align: center;
+}
+footer div.con div.card p{
+   text-align: center;
+   font-size: 15px;
+   padding: 0 30px;
+   width: 100%;
+}
+footer div.con div.card{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.footer{
+    height: 100%;
+    width: 100%;
+}
+div.hat{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+div.hat h1{
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    font-weight: 500;
+}
+div.hat i{
+    font-size: 26px;
+     position: absolute;
+     bottom: 20px;
+     right: 140px;
+}
+@media(max-width:768px){
+    footer {
+        height: 400px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: grid;
+        width: 900px;
+        margin: -80px 20 px;
+    }
+    footer .con {
+        gap: 5px;
+        justify-content: center;
+        padding: 20px;
+        margin: 10px auto;
+        height: 100%;
+        width: 100%;
+    }
+    div.hat h1{
+        font-size: 18px;
+        position: absolute;
+        bottom: 20px;
+        right: -80px;
+        font-weight: 500;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    div.hat i{
+        position: absolute;
+        right: -10px;
+        bottom: 20px;
+        font-size: 30px;
+
+    }
+    section.hero-sec div.hero-con {
+        margin: 10px auto;
+    }
+    footer div.con img{
+    height: 140px;
+    width: 130px;
+    text-align: center;
+}
+footer div.con div.card p {
+    padding: 0 30px;
+    width: 150px;
+}
+}
+@media(max-width:500px){
+    footer{
+        width: 100%;
+        height: 800px;
+        margin: -60px auto;
+        grid-template-columns: 1fr ;
+        overflow: hidden;
+    }
+    footer div.con div.card p {
+        text-align: center;
+        font-size: 15px;
+        padding: 0 30px;
+        width: 300px;
+    }
+    footer .con{
+        gap: 35px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.hat h1 {
+    bottom: 20px;
+    right: 130px;
+}
+div.hat i{
+    font-size: 26px;
+     position: absolute;
+     bottom: 20px;
+     right: 220px;
+}
+}

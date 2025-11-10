@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section.pro-sec{
+    height: fit-content;
+    width: 100%;
+    
+}
+section.pro-sec div.product-con{
+    height: fit-content;
+    width: 100%;
+    max-width: 960px;
+    border: 2px solid rgba(0,0,0, 0.6);
+    border-radius: 15px;
+    display: grid;
+    margin: -80px auto;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 2.9fr;
+    position: relative;
+    padding:30px ;
+}
+
+section.pro-sec div.product-con .box-con{
+    display: flex;
+    position: absolute;
+    bottom: 209px;
+    left: 0px; 
+    width: 300px;  
+}
+section.pro-sec div.product-con> .box-con h3{
+    /* padding-left: 30px; */
+    color: red;
+    padding-bottom: 0px;
+}
+section.pro-sec div.product-con> .box-con img{
+    height: 20px;
+    padding-left: 50px;
+}
+section.pro-sec div.product-con> div.box div span{
+    margin-top: 10px;
+}
+section.pro-sec div.product-con> div.box div.btn-con button{
+    padding: 5px 20px;
+}
+section.pro-sec div.product-con> div.box div {
+   display: flex;
+   flex-direction: column;
+}
+section.pro-sec div.product-con> div.box> img{
+    height: 50px;
+}
+section.pro-sec div.product-con> div.box div.icon{
+    position: relative;
+    color: black;
+}
+section.pro-sec div.product-con>  div.box div.icon i{
+    position: absolute;
+    bottom: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 700;
+     left: 86px;
+     padding-left: 5px;
+     cursor: pointer;
+}
+section.pro-sec div.product-con> div.box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    align-items: center;
+    padding: 12px;
+    flex-wrap: nowrap;
+    border: 1px solid rgba(0,0,0, 0.4);
+    border-radius: 8px;
+    flex-direction: column;
+    width: 150px;
+}
+section.pro-sec div.product-con> div.box h1{
+    font-size: 15px;
+   padding-top: 15px;
+}
+section.pro-sec div.product-con> div.box div.btn-con{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
+@media(max-width:768px){
+    section.pro-sec div.product-con{
+    height: fit-content;
+    width: 900px;
+    max-width: none;
+    margin: 10px 40px;
+    padding:40px;
+}
+    section.pro-sec div.product-con> div.box{
+        flex-direction: column;
+        width: 140px;
+    }
+    
+    section.pro-sec div.product-con> div.box> img{
+    height: 60px;
+}
+section.pro-sec div.product-con> div.box div.btn-con button {
+    padding: 4px 8px;
+}
+section.pro-sec div.product-con> .box-con h3{
+    /* padding-left: 30px; */
+    color: red;
+    padding-bottom: 20px;
+}
+
+    
+}
+@media(max-width:500px){
+    section.pro-sec div.product-con{
+    max-width: none;
+    grid-template-columns:1fr 1fr  ;
+    padding:30px ;
+    gap: 10px;
+    width: 400px;
+    margin: -20px 25px;
+}
+section.pro-sec div.product-con> div.box {
+    display: flex;
+    justify-content:space-evenly;
+    width: 120px;
+    margin: 0 auto;
+}
+section.pro-sec div.product-con > div.one-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+div.icon1 {
+    top: 220px;
+    right: 0;
+    margin: 0 8px;
+}
+   section.pro-sec div.product-con> div.box> img{
+    height: 100px;
+}
+section.pro-sec div.product-con> .box-con h3{
+    /* padding-left: 30px; */
+    color: red;
+    padding-bottom: 515px;
+}
+}

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section.det-con{
+    width: 100%;
+    max-width: 960px;
+    height: fit-content;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-top: 150px ;
+    display: grid;
+    margin: 150px auto;
+    padding: 20px;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    /* grid-template-rows:  1fr 1fr; */
+    gap: 6px;
+
+}
+section.det-con div.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    width: 200px;
+    /* border: solid; */
+}
+section.det-con div.img img{
+    height: 150px;
+    width: 130px;
+}
+section.det-con div.text{
+    padding-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    margin: 0 auto;
+    width: 250px;
+
+    /* border: solid; */
+}
+section.det-con div.text p{
+    text-align: left;
+    font-size: 18px;
+    margin: 0 auto;
+}
+section.det-con div.text span{
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section.det-con div.text-con{
+    width: 250px;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 4px;
+}
+section.det-con div.text-con h1{
+    font-size: 24px;
+    padding: 5px;
+    font-weight: 700;
+}
+section.det-con div.text-con > div.card-con{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: nowrap;
+    padding: 15px;
+}
+section.det-con div.text-con > div.card1{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    flex-wrap: nowrap;
+    /* padding: 10px; */
+}
+section.det-con div.text-con > div.card1  span{
+    padding: 10px;
+}
+
+section.det-con div.text-con > div.card2{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    flex-wrap: nowrap;
+    /* padding: 5px; */
+}
+section.det-con div.det-text{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+section.det-con div.det-text > button{
+    height: 45px;
+    width: 120px;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 0,0, 0.8);
+    color: white;
+
+}
+section.det-con div.det-text > button.one{
+    padding: 9px 5px;
+    color: black;
+    background-image: linear-gradient(#ffa751,#ffe259);
+    font-size: 18px;
+}
+section.det-con div.det-text > h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+section.det-con div.det-text > h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+section.det-con div.det-text > p{
+    height: fit-content;
+    width: 100%;
+}
+section.det-con div.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 195px ;
+    height: 100%;
+    width: 100%; 
+}
+section.det-con div.select select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%; 
+}
+@media(max-width:768px){
+    section.det-con{
+        width: 90%;
+    }   
+    section.det-con div.text{
+        width: 200px;
+        padding-bottom: 20px;
+        
+    } 
+    section.det-con div.text-con{
+        width: 200px;
+    }
+    section.det-con div.text-con h1{
+        font-size: 18px;
+        padding: 5px;
+        font-weight: 500;
+    }
+    section.det-con div.img img{
+        height: 180px;
+        width: 150px;
+    }
+    section.det-con div.img{
+        gap: 8px;
+        width: 200px;
+        /* border: solid; */
+    }
+}
+@media(max-width:500px){
+    section.det-con{
+        width: 90%;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    
+    }
+    section.det-con div.img{
+   
+        gap: 15px;
+        width: 180px;
+        margin: 10px auto;
+    }
+    section.det-con div.text{
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 230px;
+        }
+        section.det-con div.text-con{
+            width: 230px;
+           border-radius: 4px;
+        }
+        section.det-con div.det-text > button{
+            margin-top: 20px;
+        }
+        section.det-con div.select{
+            padding-top: 90px ;
+        }
+}
+

@@ -1,0 +1,260 @@
+
+:root{
+    --color-brand:#333333;
+    --nav-color:#ffe259;
+    --nav-color-1:#ffa751;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section.hero-con{
+    height: fit-content;
+    width: 100%;
+    max-width: 960px;
+    margin: 120px auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    /* margin-top: 100px; */
+}
+section.hero-con  div.card-box > div.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px ;
+    height: 100%;
+    width: 100%; 
+}
+section.hero-con div.card-box > div.select select{
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+section.hero-con div.nav-box{
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 20px ;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 12px 20px;
+    float: left;
+    /* border: 1px solid; */
+    flex-direction: column;
+
+}
+section.hero-con div.nav-box> form{
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    flex-direction: column;
+    gap: 13px;
+    text-align: center;
+
+}
+section.hero-con div.nav-box> form > h1{
+    font-size: 18px;
+}
+section.hero-con div.nav-box> form > div.input-box{
+   display: flex;
+   height: 16px;
+   gap: 6px;
+   width: 100px;
+
+}
+ 
+section.hero-con div.card-box{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid ;
+    padding: 20px 20px;
+    margin: 10px 17px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section.hero-con div.card-box> div.card-text {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row;
+
+} 
+section.hero-con div.card-box> div.card-text h1{
+    font-size: 28px;
+    font-weight: 700;
+}
+section.hero-con div.card-box > div.card-text .span{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding-top: 15px;
+
+}
+section.hero-con div.card-box> div.card-text > div.select{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 9px;
+    height: 20px;
+    width: 50%;
+}
+section.hero-con div.card-box> div.card-text > div.select div.input-box input{
+    text-align: justify;
+}
+
+
+section.hero-con div.card-box> div.card-text > div.select select{
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+section.hero-con div.card-box > div.card-con{
+     width: 90%;
+     height: fit-content;
+     display: grid;
+     margin: 10px auto;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: none;
+     gap: 4px;
+
+     /* border: 1px solid black; */
+     
+
+}
+section.hero-con div.card-box> div.card-con > div.card{
+height: fit-content;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+border-radius: 9px;
+margin: 12px 10px;
+padding: 9px 20px;
+width: 200px;
+
+}
+section.hero-con div.card-box>div.card-con div.card img{
+    height: 100px;
+    width: 100px;
+}
+section.hero-con div.card-box> div.card-con div.card h1{
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+section.hero-con div.card-box> div.card-con div.card div.small-card{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    padding: 10px 5px;
+    gap: 8px;
+    align-items: center;
+}
+section.hero-con div.card-box> div.card-con div.card div.small-card> button{
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0,0, 0, 0.2);
+    text-transform: uppercase;
+}
+@media(max-width:768px){
+    body{
+        padding: 15px;
+    }
+    section.hero-con{
+        grid-template-columns: 0.4fr 1.5fr;
+    }
+    section.hero-con div.card-box{
+        margin: 10px auto;
+    }
+    section.hero-con div.card-box > div.card-con{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;   
+   }
+   section.hero-con div.card-box> div.card-con > div.card{
+    margin: 8px auto;
+    width: 150px;
+    
+    }
+    section.hero-con div.nav-box{
+     margin: 0 auto;
+    
+    }
+}
+@media(max-width:500px){
+    section.hero-con div.card-box > div.card-con{
+        grid-template-columns: 1fr ;
+   }
+ 
+section.hero-con div.nav-box> form{
+    gap: 30px;
+    text-transform: uppercase;
+}
+section.hero-con div.nav-box{
+    width: 50%;
+    padding: 10px 12px;
+
+}
+section.hero-con{
+    grid-template-columns: 0.5fr 1.5fr;
+    /* margin-top: 100px; */
+}
+section.hero-con div.card-box{
+    
+    padding: 10px 10px;
+    margin: 10px auto;
+    width: 230px;
+}
+section.hero-con div.card-box> div.card-con > div.card{
+    width: 200px;
+    
+    }
+    section.hero-con div.card-box> div.card-text > div.select{
+        padding: 10px 1px;
+        height: 40px;
+        width: 40px;
+    }
+    section.hero-con div.card-box> div.card-text > div.select select{
+        padding: 7px 4px;
+        font-weight: 500;
+        width: 80px;
+        height: 40px;
+    }
+    section.hero-con div.card-box> div.card-text h1{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    section.hero-con div.card-box> div.card-text h1{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    section.hero-con div.card-box > div.card-text .span{
+        display: flex;
+        height: 40px;
+        width: 90%;
+        padding-top: 15px;
+        font-size: 10px;
+    
+    }
+
+}

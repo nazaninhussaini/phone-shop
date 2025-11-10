@@ -1,0 +1,256 @@
+:root{
+    --nav-color:#ffe259;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section.hero-sec{
+    height: fit-content;
+    width: 100%;
+    max-width: 970px;
+    margin-top: 130px;
+    margin: 130px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.hero-sec div.hero-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: red;
+    height: 250px;
+    position: relative;
+}
+section.hero-sec div.hero-con .i{
+    border: 1px solid rgba(0,0,0, 0.4);
+    background-color:rgba(255,255,255, 0.7);
+    color: black;
+    font-size: 40px;
+    padding-right: 7px;
+    text-align: center;
+    margin: 0 12px;
+    font-weight: 900;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+}
+section.hero-sec div.hero-con .id{
+    border: 1px solid rgba(0,0,0, 0.4);
+    background-color:rgba(255,255,255, 0.7);
+    color: black;
+    font-size: 40px;
+    padding-left: 7px;
+    text-align: center;
+    margin: 0 12px;
+    font-weight: 900;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+}
+section.hero-sec div.hero-con .icon{
+    border: 1px solid rgba(0,0,0, 0.4);
+    background-color:rgba(255,255,255, 0.7);
+    color: black;
+    font-size: 40px;
+    padding-left: 7px;
+    text-align: center;
+    margin-left: 460px;
+    font-weight: 900;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+}
+section.hero-sec div.hero-con .text1{
+    display: flex;
+    font-size: 20px;
+}
+section.hero-sec div.hero-con .text{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 130px;
+    margin: 14px;
+    color: white;
+}
+section.hero-sec div.hero-con span{
+    text-align: center;
+     color: yellow;
+}
+section.hero-sec div.hero-con div.group2 p{
+    font-size: 24px;
+    font-weight: 7  00;
+}
+section.hero-sec div.hero-con div.group2{
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    border: 2px solid blue;
+    height:170px;
+    padding: 45px 10px;
+    color: red;
+    /* background-image: linear-gradient(lightyellow,l 60%,darkblue 90%); */
+    margin: 0 auto;
+    background-image: linear-gradient( lightyellow,yellow );
+    border-radius: 20px;
+    margin-left: 130px;
+    width: 400px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+}
+section.hero-sec div.hero-con div.group2 h3.hh{
+    background-color: blue;
+    border: 2px solid blue;
+    padding:8px 30px;
+    position: absolute;
+    font-weight: 200;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    color: rgba(255,255,0, 0.9);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    bottom: 0;
+    left: 0;
+}
+section.hero-sec div.hero-con div.group2 h1{
+    font-size: 40px;
+    margin-top: -16px;
+    padding-left: 12px;
+}
+section.hero-sec div.hero-con img{
+    height:180px;
+    width: 300px;
+}
+
+div.icon1{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 50px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    margin: 0 8px;
+}
+div.icon1 i{
+    position: absolute;
+    top: 9px;
+    font-weight: 900;
+    font-size: 26px;
+    right: 14px;
+}
+
+section.hero-sec div.product-con> div.sp-box{
+    margin-right: 30px;
+    width: 150px;
+}
+
+section.hero-sec div.product-con> div.icon{
+    margin-right: 200px;
+}
+@media(max-width:768px){
+section.hero-sec div.hero-con {
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    height:400px ;
+    margin: 0 40px;
+    
+}
+section.hero-sec{
+    height: fit-content;
+    width: 100%;
+    max-width: none;
+    margin: 130px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.pro-sec div.product-con {
+    width: 900px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: none;
+    padding: 10px;
+}
+}
+@media(max-width:500px){
+    section.hero-sec div.hero-con{
+        margin: 5px auto;
+        max-width: none;
+        width: 650px;
+        height: 250px;  
+}
+section.hero-sec div.hero-con .text {
+    right: 30px;
+    margin: 20px;
+}
+section.hero-sec div.hero-con div.group2 {
+    gap: 5px;
+    height: 160px;
+    padding: 20px 10px;
+    margin-left: 110px;
+    width: 550px;
+    margin-top: 50px;
+}
+section.hero-sec{
+    height: 500px;
+    width: 100%;
+    max-width: none;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 130px auto;
+}
+section.hero-sec div.hero-con{
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: 550px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.hero-sec div.hero-con .text{
+    right: 30px;
+    margin: 14px;
+    margin-top: 200px;
+}
+section.hero-sec div.hero-con .i {
+    display: none; 
+    text-align: center;
+    float: left;
+    margin: 0 12px;
+   
+}
+section.hero-sec div.hero-con img {
+    height: 200px;
+    width: 300px;
+    padding-bottom: 40px;
+}
+section.hero-sec div.hero-con .id {
+    text-align: center;
+    margin: 0 12px;
+    font-weight: 900;
+    display: none;
+}
+
+section.hero-sec div.hero-con div.group2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    padding: 5px 10px;
+    width: 400px;
+    margin-top: 50px;
+    margin: 10px 20px ;
+}
+section.hero-sec div.hero-con div.group2 h2{
+    padding-bottom: 30px;
+}
+}
